@@ -24,7 +24,7 @@ connectDB();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors({ credentials: true, origin: ["https://test-vercel-ivory-mu.vercel.app"]}));
+app.use(cors({origin: ["https://test-vercel-ivory-mu.vercel.app"] ,credentials: true}));
 app.use(cookieParser());
 app.use(morgan('dev'));
 
